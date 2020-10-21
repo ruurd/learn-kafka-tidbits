@@ -1,4 +1,4 @@
-package nl.bureaupels.learn.kafka.udemy.producer;
+package nl.bureaupels.learn.kafka.tidbits.consumer;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -17,7 +17,7 @@ public class ConsumerDemoGroups {
     private final static String GROUP = "second_topic_reader";
 
 
-    public void go(KafkaConsumer consumer) {
+    public void go(KafkaConsumer<String, String> consumer) {
         while(true) {
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
             for (ConsumerRecord record: records) {

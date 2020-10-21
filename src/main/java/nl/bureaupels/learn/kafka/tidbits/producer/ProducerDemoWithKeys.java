@@ -1,4 +1,4 @@
-package nl.bureaupels.learn.kafka.udemy.producer;
+package nl.bureaupels.learn.kafka.tidbits.producer;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.*;
@@ -11,7 +11,7 @@ import java.util.concurrent.ExecutionException;
 public class ProducerDemoWithKeys {
     private final static String TOPIC = "first_topic";
 
-    public void go(KafkaProducer producer) throws ExecutionException, InterruptedException {
+    public void go(KafkaProducer<String, String> producer) throws ExecutionException, InterruptedException {
         for (int i = 0; i < 10; i++) {
             String key = "id_" + Integer.toString(i);
             String value = "hello_world_" + Integer.toString(i);

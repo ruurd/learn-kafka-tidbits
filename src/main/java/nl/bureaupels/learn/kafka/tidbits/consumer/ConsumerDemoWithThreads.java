@@ -1,4 +1,4 @@
-package nl.bureaupels.learn.kafka.udemy.producer;
+package nl.bureaupels.learn.kafka.tidbits.consumer;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerConfig;

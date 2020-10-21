@@ -1,4 +1,4 @@
-package nl.bureaupels.learn.kafka.udemy.producer;
+package nl.bureaupels.learn.kafka.tidbits.producer;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
